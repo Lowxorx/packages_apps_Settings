@@ -590,6 +590,7 @@ public class AppButtonsPreferenceController extends BasePreferenceController imp
         if (mHomePackages.contains(mAppEntry.info.packageName)
                 || mAppEntry.info.packageName.equals(GmsCompatApp.PKG_NAME)
                 || mAppEntry.info.packageName.equals(GmsCompatApp.PKG_NAME + ".config")
+                || mAppEntry.info.packageName.equals("app.grapheneos.gmscompat")
                 || isSystemPackage(mActivity.getResources(), mPm, mPackageInfo)) {
             // Disable button for core system applications.
             mButtonsPref.setButton2Text(R.string.disable_text)
